@@ -3,14 +3,14 @@
 
 using namespace std;
 
-void ObserverA::notify() {
-    cout << "Notifying at Observer A" << endl;
+void ObserverA::notify(int val) {
+    cout << "Notifying at Observer A with value " << val << endl;
 }
 
-void ObserverB::notify() {
-    cout << "Notifying at Observer B" << endl;
+void ObserverB::notify(int val) {
+    cout << "Notifying at Observer B with value " << val << endl;
 }
 
-void ObserverC::notify() {
-    cout << "Notifying at Observer C" << endl;
+void ObserverC::notify(int val) {
+    cout << "Notifying at Observer C with value " << val << endl;
 }

@@ -4,22 +4,22 @@
 
 class Observer {
     public:
-        virtual void notify() {}
+        virtual void notify(int) {}
 };
 
 class ObserverA : public Observer {
     public:
-        void notify() override;
+        void notify(int) override;
 };
 
 class ObserverB : public Observer {
     public:
-        void notify() override;
+        void notify(int) override;
 };
 
 class ObserverC : public Observer {
     public:
-        void notify() override;
+        void notify(int) override;
 };
 
 #endif
