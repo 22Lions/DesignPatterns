@@ -1,5 +1,0 @@
-* linguist-vendored
-*.py linguist-vendored=true
-*.cpp linguist-vendored=true
-*.h linguist-vendored=true
-*.java linguist-vendored=true
