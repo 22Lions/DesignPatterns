@@ -1,9 +1,9 @@
 public class Main {
     public static void main (String []args){
 
-        ObserverA observerA = new ObserverA();
-        ObserverB observerB = new ObserverB();
-        ObserverC observerC = new ObserverC();
+        IObserver observerA = new ObserverA();
+        IObserver observerB = new ObserverB();
+        IObserver observerC = new ObserverC();
 
         Subject subject = new Subject();
 

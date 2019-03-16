@@ -3,21 +3,21 @@ import java.util.ArrayList;
 
 public class Subject 
 {
-    private List<Observer> _observers = new ArrayList<Observer>();
+    private List<IObserver> _observers = new ArrayList<IObserver>();
 
-    public void Subscribe(Observer obs) 
+    public void Subscribe(IObserver obs) 
     {
         _observers.add(obs);
     }
 
-    public void Unsubscribe(Observer obs)
+    public void Unsubscribe(IObserver obs)
     {
         _observers.remove(obs);
     }
 
     public void Updadate()
     {
-        for (Observer obs : _observers) {
+        for (IObserver obs : _observers) {
             obs.Notify();
         }
     }
